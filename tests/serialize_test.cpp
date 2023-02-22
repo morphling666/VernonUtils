@@ -128,7 +128,6 @@ int main() {
     // deserialize unordered_map
     std::unordered_map<int, std::vector<int>> hash_level_2_new;
     json_deserializer.transferToObject("hash_level_2", hash_level_2_new);
-    // here
     for (auto it = hash_level_2_new.begin(); it != hash_level_2_new.end(); ++it) {
         int key = it->first;
         std::cout<<"key="<<key<<", value=";
